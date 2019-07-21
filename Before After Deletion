@@ -1,0 +1,41 @@
+
+package arraylistdemo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class ArrayListDemo
+{
+
+ 
+    public static void main(String[] args)
+    {
+       ArrayList<String>a=new ArrayList<String>(); 
+      String s="Pravin";
+      String s1="Shubham";
+      String s2="Anand";
+      String s3="Shoaib";
+      String s4="Naitik";
+      
+      a.add(s);
+      a.add(s1);
+      a.add(s2);
+      a.add(s3);
+      a.add(s4);
+      
+        System.out.println("Before Deletion");
+        Iterator it=a.iterator();
+        while(it.hasNext())
+        {
+            System.out.println("The value of 3 pos is :"+a.get(2));
+            a.remove(s1);
+            a.remove(s4);
+            
+            System.out.println("After Deletion");
+            
+        }
+        
+    }
+    
+}
